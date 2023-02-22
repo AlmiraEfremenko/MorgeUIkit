@@ -8,7 +8,7 @@
 import UIKit
 
 class GreetingView: UIView {
-
+    
     private let greetingImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "logo")
@@ -18,16 +18,15 @@ class GreetingView: UIView {
         return imageView
     }()
 
-    private let greetingsLabel: UILabel = {
+    lazy var greetingsLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Привет, "
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 24, weight: .bold)
         label.textColor = .blue
         return label
     }()
-
+    
     private let gladToSeeYouLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -47,7 +46,7 @@ class GreetingView: UIView {
     }
 
     private func configure() {
-        backgroundColor = .white
+        backgroundColor = Colors.backgroundColor.color
         setupHierarchy()
         setupLayout()
     }
