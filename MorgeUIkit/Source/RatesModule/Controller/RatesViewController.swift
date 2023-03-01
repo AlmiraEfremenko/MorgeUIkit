@@ -5,4 +5,14 @@
 //  Created by MAC on 27.02.2023.
 //
 
-import Foundation
+import UIKit
+
+class RatesViewController: UIViewController {
+    
+    // MARK: Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view = RatesView()
+    }
+}
