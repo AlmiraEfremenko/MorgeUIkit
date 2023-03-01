@@ -8,10 +8,12 @@
 import UIKit
 
 class GreetingView: UIView {
+
+    // MARK: Property
     
     private let greetingImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "logo")
+        imageView.image = UIImage(named: "hello")
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -36,6 +38,8 @@ class GreetingView: UIView {
         return label
     }()
 
+    // MARK: Initial
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -45,11 +49,15 @@ class GreetingView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: Configure
+    
     private func configure() {
         backgroundColor = Colors.backgroundColor.color
         setupHierarchy()
         setupLayout()
     }
+
+    // MARK: SetupHierarchy
 
     private func setupHierarchy() {
         addSubview(greetingImageView)
@@ -57,10 +65,11 @@ class GreetingView: UIView {
         addSubview(gladToSeeYouLabel)
     }
 
+    // MARK: SetupLayout
+
     private func setupLayout() {
 
         NSLayoutConstraint.activate([
-
             greetingsLabel.topAnchor.constraint(equalTo: topAnchor, constant: 500),
             greetingImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             greetingImageView.widthAnchor.constraint(equalToConstant: 200),

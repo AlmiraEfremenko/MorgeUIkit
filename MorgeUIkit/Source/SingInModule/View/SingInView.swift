@@ -9,6 +9,8 @@ import UIKit
 
 class SingInView: UIView {
 
+    // MARK: Property
+
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -43,8 +45,10 @@ class SingInView: UIView {
         return button
     }()
 
-    public var singIn: (() -> Void)?
     private var isInputName = true
+    public var singIn: (() -> Void)?
+
+    // MARK: Initial
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -55,8 +59,9 @@ class SingInView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    @objc private func tapButton() {
+    // MARK: Tap button
 
+    @objc private func tapButton() {
         guard let text = nameTextField.text else { return }
 
         if !text.isEmpty && isInputName {
@@ -64,17 +69,23 @@ class SingInView: UIView {
         }
     }
 
+    // MARK: Configure
+
     private func configure() {
         backgroundColor = Colors.backgroundColor.color
         setupHierarchy()
         setupLayout()
     }
 
+    // MARK: SetupHierarchy
+
     private func setupHierarchy() {
         addSubview(titleLabel)
         addSubview(nameTextField)
         addSubview(buttonSingIn)
     }
+
+    // MARK: SetupLayout
 
     private func setupLayout() {
 
@@ -96,6 +107,8 @@ class SingInView: UIView {
         ])
     }
 }
+
+// MARK: Extension SingInView
 
 extension SingInView: UITextFieldDelegate {
 

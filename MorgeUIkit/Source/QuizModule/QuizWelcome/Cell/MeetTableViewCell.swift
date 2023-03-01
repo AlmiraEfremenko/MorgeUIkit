@@ -9,6 +9,8 @@ import UIKit
 
 class MeetTableViewCell: UITableViewCell {
 
+    // MARK: Property
+
     static let identifire = String(describing: MeetTableViewCell.self)
 
     private let backgroundCell: UIView = {
@@ -20,7 +22,7 @@ class MeetTableViewCell: UITableViewCell {
     }()
 
     private let morgeImageView: UIImageView = {
-       let imageView = UIImageView()
+        let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: "logo")
         imageView.contentMode = .scaleAspectFit
@@ -29,7 +31,11 @@ class MeetTableViewCell: UITableViewCell {
 
     let titlelabel = UILabel(text: "",
                              font: .systemFont(ofSize: 12,
-                                               weight: .regular))
+                                               weight: .regular),
+                             color: .black,
+                             textAlignment: .left)
+
+    // MARK: Initial
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -40,6 +46,8 @@ class MeetTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: Configure
+
     private func configure() {
         backgroundColor = .clear
         selectionStyle = .none
@@ -47,16 +55,19 @@ class MeetTableViewCell: UITableViewCell {
         setupLayout()
     }
 
+    // MARK: SetupHierarchy
+
     private func setupHierarchy() {
         addSubview(backgroundCell)
         backgroundCell.addSubview(morgeImageView)
         backgroundCell.addSubview(titlelabel)
     }
 
+    // MARK: SetupLayout
+
     private func setupLayout() {
 
         NSLayoutConstraint.activate([
-
             backgroundCell.topAnchor.constraint(equalTo: topAnchor, constant: 7),
             backgroundCell.leadingAnchor.constraint(equalTo: leadingAnchor),
             backgroundCell.trailingAnchor.constraint(equalTo: trailingAnchor),

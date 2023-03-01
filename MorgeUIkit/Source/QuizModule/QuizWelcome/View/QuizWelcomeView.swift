@@ -9,6 +9,8 @@ import UIKit
 
 class QuizWelcomeView: UIView {
 
+    // MARK: Property
+
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -28,14 +30,13 @@ class QuizWelcomeView: UIView {
         return label
     }()
 
-     lazy var buttonStart: UIButton = {
+    lazy var buttonStart: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = Colors.backgroundLanchScreen.color
         button.setTitle("Начнем", for: .normal)
         button.layer.cornerRadius = 10
         button.setTitleColor(.white, for: .normal)
-//        button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
         return button
     }()
 
@@ -56,6 +57,8 @@ class QuizWelcomeView: UIView {
         return tableView
     }()
 
+    // MARK: Initial
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -65,11 +68,15 @@ class QuizWelcomeView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: Configure
+
     private func configure() {
         backgroundColor = Colors.backgroundColor.color
         setupHierarchy()
         setupLayout()
     }
+
+    // MARK: SetupHierarchy
 
     private func setupHierarchy() {
         addSubview(titleLabel)
@@ -78,10 +85,11 @@ class QuizWelcomeView: UIView {
         addSubview(buttonStart)
     }
 
+    // MARK: SetupLayout
+
     private func setupLayout() {
 
         NSLayoutConstraint.activate([
-
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 250),
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
 
@@ -101,10 +109,12 @@ class QuizWelcomeView: UIView {
     }
 }
 
+// MARK: Extension QuizWelcomeView
+
 extension QuizWelcomeView: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       3
+        3
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

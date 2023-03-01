@@ -9,6 +9,8 @@ import UIKit
 
 class GreetingViewController: UIViewController {
 
+    // MARK: Property
+
     private let singInView = SingInViewController()
 
     private var greetingView: GreetingView? {
@@ -16,17 +18,21 @@ class GreetingViewController: UIViewController {
         return view as? GreetingView
     }
 
+    // MARK: Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view = GreetingView()
         greetingsUser()
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
             let quizWelcomeViewController = QuizWelcomeViewController()
             quizWelcomeViewController.modalPresentationStyle = .fullScreen
-            self.present(quizWelcomeViewController, animated: false)
+            self?.present(quizWelcomeViewController, animated: false)
         }
     }
+
+    // MARK: GreetingsUser
 
     private func greetingsUser() {
         guard let name = UserSettings.userModel?.name else { return }
