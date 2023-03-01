@@ -9,10 +9,14 @@ import UIKit
 
 class SingInViewController: UIViewController {
 
+    // MARK: Property
+
     private var singInView: SingInView? {
         guard isViewLoaded else { return nil }
         return view as? SingInView
     }
+
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +29,9 @@ class SingInViewController: UIViewController {
             self?.signInAccount()
         }
     }
-    
+
+    // MARK: SignInAccount
+
     private func signInAccount() {
         let greetingViewController = GreetingViewController()
         greetingViewController.modalPresentationStyle = .fullScreen
