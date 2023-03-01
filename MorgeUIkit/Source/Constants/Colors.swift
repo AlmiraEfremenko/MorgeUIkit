@@ -13,6 +13,7 @@ enum Colors: String {
 
     case backgroundLanchScreen
     case backgroundColor
+    case blue
 
     // MARK: - Text
 
