@@ -33,6 +33,9 @@
 		04C0643329A610960024125C /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0643229A610960024125C /* QuizModel.swift */; };
 		04C0643629A611440024125C /* QuizQuestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0643529A611440024125C /* QuizQuestionsTableViewCell.swift */; };
 		04DD01F929A4E87B00C2721F /* UIlabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD01F829A4E87B00C2721F /* UIlabel + Ext.swift */; };
+		9589755529A7C3DD00463B1A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589755429A7C3DD00463B1A /* TabBarController.swift */; };
+		9589755729AB972C00463B1A /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589755629AB972C00463B1A /* UIColor + ext.swift */; };
+		9589755929AB986B00463B1A /* Resourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589755829AB986B00463B1A /* Resourses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		04C0643229A610960024125C /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		04C0643529A611440024125C /* QuizQuestionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionsTableViewCell.swift; sourceTree = "<group>"; };
 		04DD01F829A4E87B00C2721F /* UIlabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIlabel + Ext.swift"; sourceTree = "<group>"; };
+		9589755429A7C3DD00463B1A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9589755629AB972C00463B1A /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
+		9589755829AB986B00463B1A /* Resourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resourses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 		046C8ECD299F7BF50061D046 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9589755329A6208400463B1A /* TabBar */,
 				046C8EE329A383EA0061D046 /* UserDefaults */,
 				046C8EDE299FA3800061D046 /* Constants */,
 				046C8ED4299F83820061D046 /* Extensions */,
@@ -340,7 +347,17 @@
 				04C0643529A611440024125C /* QuizQuestionsTableViewCell.swift */,
 				0485128D29AB953200A9CCFF /* QuizAnswersTableViewCell.swift */,
 			);
-			path = Cell;
+			path = Cell; 
+        	sourceTree = "<group>";
+		};
+		9589755329A6208400463B1A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9589755429A7C3DD00463B1A /* TabBarController.swift */,
+				9589755629AB972C00463B1A /* UIColor + ext.swift */,
+				9589755829AB986B00463B1A /* Resourses.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,10 +434,12 @@
 				04C0642E29A5E4A40024125C /* QuizAnswerView.swift in Sources */,
 				0452B96729AD09AE00370877 /* RatesView.swift in Sources */,
 				046C8EE0299FA38E0061D046 /* Colors.swift in Sources */,
+				9589755529A7C3DD00463B1A /* TabBarController.swift in Sources */,
 				046C8EBC299F74880061D046 /* SingInViewController.swift in Sources */,
 				0416307329AF30D90031EC9B /* UIStackView + Ext.swift in Sources */,
 				04C0643029A5E4B30024125C /* QuizAnswerViewController.swift in Sources */,
 				046C8EED29A39A210061D046 /* QuizWelcomeView.swift in Sources */,
+				9589755729AB972C00463B1A /* UIColor + ext.swift in Sources */,
 				0452B96D29AD232500370877 /* String + Ext.swift in Sources */,
 				04DD01F929A4E87B00C2721F /* UIlabel + Ext.swift in Sources */,
 				046C8EE2299FE6BB0061D046 /* UserModel.swift in Sources */,
@@ -433,6 +452,7 @@
 				046C8EB8299F74880061D046 /* AppDelegate.swift in Sources */,
 				046C8EF229A3D35F0061D046 /* MeetTableViewCell.swift in Sources */,
 				046C8ED9299FA2160061D046 /* GreetingView.swift in Sources */,
+				9589755929AB986B00463B1A /* Resourses.swift in Sources */,
 				046C8ED3299F7C420061D046 /* SingInView.swift in Sources */,
 				04C0643629A611440024125C /* QuizQuestionsTableViewCell.swift in Sources */,
 				0452B96929AD09C000370877 /* RatesViewController.swift in Sources */,
