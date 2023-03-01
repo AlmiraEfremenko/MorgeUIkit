@@ -18,6 +18,6 @@ let tabBarController = UITabBarController()
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        window?.rootViewController = RatesViewController()
+        window?.rootViewController = TabBarController()
     }
 }

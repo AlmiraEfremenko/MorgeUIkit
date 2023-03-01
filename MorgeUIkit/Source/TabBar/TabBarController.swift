@@ -13,11 +13,11 @@ enum Tabs: Int {
     case awards
     case account
 }
-final class tabBarController: UITabBarController {
+
+final class TabBarController: UITabBarController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
         configure()
     }
     
@@ -26,15 +26,14 @@ final class tabBarController: UITabBarController {
     }
     
     private func configure(){
-        tabBar.tintColor = Resources.Colors.active
-        tabBar.barTintColor = Resources.Colors.inactive
+        tabBar.tintColor = Colors.blue.color
+        tabBar.unselectedItemTintColor = Colors.black.color
         tabBar.backgroundColor = .white
-        
-        
-        let homeController = UIViewController()
-        let progresController = UIViewController()
-        let awardsController = UIViewController()
-        let accountController = UIViewController()
+
+        let homeController = HomeViewController()
+        let progresController = ProgressViewController()
+        let awardsController = AwardsViewController()
+        let accountController = AccountViewController()
         
         let homeNavigation = UINavigationController(rootViewController: homeController)
         let progresNavigation = UINavigationController(rootViewController: progresController)
@@ -45,14 +44,14 @@ final class tabBarController: UITabBarController {
                                                  image: Resources.Images.TabBar.home,
                                                  tag: Tabs.home.rawValue)
         progresNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.progres,
-                                                 image: Resources.Images.TabBar.progres,
-                                                 tag: Tabs.progres.rawValue)
+                                                    image: Resources.Images.TabBar.progres,
+                                                    tag: Tabs.progres.rawValue)
         awardsNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.awards,
-                                                 image: Resources.Images.TabBar.awards,
-                                                 tag: Tabs.awards.rawValue)
+                                                   image: Resources.Images.TabBar.awards,
+                                                   tag: Tabs.awards.rawValue)
         accoundNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.account,
-                                              image: Resources.Images.TabBar.account,
-                                              tag: Tabs.account.rawValue)
+                                                    image: Resources.Images.TabBar.account,
+                                                    tag: Tabs.account.rawValue)
 
         setViewControllers([
             homeNavigation,

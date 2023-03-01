@@ -8,10 +8,6 @@
 import UIKit
 
 enum Resources {
-    enum Colors {
-        static var active = UIColor (hexString: "#0E6EFF")
-        static var inactive = UIColor (hexString: "#E3EEF6")
-    }
     
     enum Strings {
         enum TabBar{

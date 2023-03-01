@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0416307329AF30D90031EC9B /* UIStackView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416307229AF30D90031EC9B /* UIStackView + Ext.swift */; };
+		0416308129AF6F750031EC9B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416308029AF6F750031EC9B /* HomeView.swift */; };
+		0416308329AF6FA40031EC9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416308229AF6FA40031EC9B /* HomeViewController.swift */; };
+		0416308529AF70390031EC9B /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416308429AF70390031EC9B /* ProgressView.swift */; };
+		0416308729AF70490031EC9B /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416308629AF70490031EC9B /* ProgressViewController.swift */; };
+		0416308929AF70950031EC9B /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416308829AF70950031EC9B /* AwardsView.swift */; };
+		0416308B29AF70A30031EC9B /* AwardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416308A29AF70A30031EC9B /* AwardsViewController.swift */; };
+		0416308D29AF70E10031EC9B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416308C29AF70E10031EC9B /* AccountView.swift */; };
+		0416308F29AF70EC0031EC9B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416308E29AF70EC0031EC9B /* AccountViewController.swift */; };
 		0452B96729AD09AE00370877 /* RatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452B96629AD09AE00370877 /* RatesView.swift */; };
 		0452B96929AD09C000370877 /* RatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452B96829AD09C000370877 /* RatesViewController.swift */; };
 		0452B96B29AD177700370877 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452B96A29AD177700370877 /* UIView+Ext.swift */; };
@@ -34,12 +42,19 @@
 		04C0643629A611440024125C /* QuizQuestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0643529A611440024125C /* QuizQuestionsTableViewCell.swift */; };
 		04DD01F929A4E87B00C2721F /* UIlabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD01F829A4E87B00C2721F /* UIlabel + Ext.swift */; };
 		9589755529A7C3DD00463B1A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589755429A7C3DD00463B1A /* TabBarController.swift */; };
-		9589755729AB972C00463B1A /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589755629AB972C00463B1A /* UIColor + ext.swift */; };
 		9589755929AB986B00463B1A /* Resourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589755829AB986B00463B1A /* Resourses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0416307229AF30D90031EC9B /* UIStackView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Ext.swift"; sourceTree = "<group>"; };
+		0416308029AF6F750031EC9B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0416308229AF6FA40031EC9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0416308429AF70390031EC9B /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		0416308629AF70490031EC9B /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		0416308829AF70950031EC9B /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		0416308A29AF70A30031EC9B /* AwardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsViewController.swift; sourceTree = "<group>"; };
+		0416308C29AF70E10031EC9B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		0416308E29AF70EC0031EC9B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		0452B96629AD09AE00370877 /* RatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesView.swift; sourceTree = "<group>"; };
 		0452B96829AD09C000370877 /* RatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesViewController.swift; sourceTree = "<group>"; };
 		0452B96A29AD177700370877 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
@@ -68,7 +83,6 @@
 		04C0643529A611440024125C /* QuizQuestionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionsTableViewCell.swift; sourceTree = "<group>"; };
 		04DD01F829A4E87B00C2721F /* UIlabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIlabel + Ext.swift"; sourceTree = "<group>"; };
 		9589755429A7C3DD00463B1A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		9589755629AB972C00463B1A /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		9589755829AB986B00463B1A /* Resourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resourses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +97,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0416307429AF6D340031EC9B /* ProgressModule */ = {
+			isa = PBXGroup;
+			children = (
+				0416307B29AF6F200031EC9B /* ProgressView */,
+				0416307A29AF6F1D0031EC9B /* ProgressViewController */,
+			);
+			path = ProgressModule;
+			sourceTree = "<group>";
+		};
+		0416307529AF6D440031EC9B /* AwardsModule */ = {
+			isa = PBXGroup;
+			children = (
+				0416307C29AF6F370031EC9B /* AwardsView */,
+				0416307D29AF6F3F0031EC9B /* AwardsViewController */,
+			);
+			path = AwardsModule;
+			sourceTree = "<group>";
+		};
+		0416307629AF6D540031EC9B /* AccountModule */ = {
+			isa = PBXGroup;
+			children = (
+				0416307F29AF6F4F0031EC9B /* AccountView */,
+				0416307E29AF6F4D0031EC9B /* AccountViewController */,
+			);
+			path = AccountModule;
+			sourceTree = "<group>";
+		};
+		0416307729AF6DEB0031EC9B /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0416308229AF6FA40031EC9B /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		0416307829AF6DEE0031EC9B /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0416308029AF6F750031EC9B /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		0416307A29AF6F1D0031EC9B /* ProgressViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0416308629AF70490031EC9B /* ProgressViewController.swift */,
+			);
+			path = ProgressViewController;
+			sourceTree = "<group>";
+		};
+		0416307B29AF6F200031EC9B /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				0416308429AF70390031EC9B /* ProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		0416307C29AF6F370031EC9B /* AwardsView */ = {
+			isa = PBXGroup;
+			children = (
+				0416308829AF70950031EC9B /* AwardsView.swift */,
+			);
+			path = AwardsView;
+			sourceTree = "<group>";
+		};
+		0416307D29AF6F3F0031EC9B /* AwardsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0416308A29AF70A30031EC9B /* AwardsViewController.swift */,
+			);
+			path = AwardsViewController;
+			sourceTree = "<group>";
+		};
+		0416307E29AF6F4D0031EC9B /* AccountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0416308E29AF70EC0031EC9B /* AccountViewController.swift */,
+			);
+			path = AccountViewController;
+			sourceTree = "<group>";
+		};
+		0416307F29AF6F4F0031EC9B /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				0416308C29AF70E10031EC9B /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
 		0452B96029AD08AF00370877 /* RatesModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +205,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0452B96429AD092200370877 /* New Group */ = {
+		0452B96429AD092200370877 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
+				0416307829AF6DEE0031EC9B /* HomeView */,
+				0416307729AF6DEB0031EC9B /* HomeViewController */,
 			);
-			path = "New Group";
+			path = HomeModule;
 			sourceTree = "<group>";
 		};
 		0452B96529AD093600370877 /* Controller */ = {
@@ -171,7 +278,10 @@
 				046C8ED7299FA1F50061D046 /* GreetingModule */,
 				046C8EE629A397D90061D046 /* QuizModule */,
 				0452B96029AD08AF00370877 /* RatesModule */,
-				0452B96429AD092200370877 /* New Group */,
+				0452B96429AD092200370877 /* HomeModule */,
+				0416307429AF6D340031EC9B /* ProgressModule */,
+				0416307529AF6D440031EC9B /* AwardsModule */,
+				0416307629AF6D540031EC9B /* AccountModule */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -347,14 +457,13 @@
 				04C0643529A611440024125C /* QuizQuestionsTableViewCell.swift */,
 				0485128D29AB953200A9CCFF /* QuizAnswersTableViewCell.swift */,
 			);
-			path = Cell; 
-        	sourceTree = "<group>";
+			path = Cell;
+			sourceTree = "<group>";
 		};
 		9589755329A6208400463B1A /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				9589755429A7C3DD00463B1A /* TabBarController.swift */,
-				9589755629AB972C00463B1A /* UIColor + ext.swift */,
 				9589755829AB986B00463B1A /* Resourses.swift */,
 			);
 			path = TabBar;
@@ -430,25 +539,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0416308129AF6F750031EC9B /* HomeView.swift in Sources */,
 				046C8EEB29A398650061D046 /* QuizWelcomeViewController.swift in Sources */,
 				04C0642E29A5E4A40024125C /* QuizAnswerView.swift in Sources */,
 				0452B96729AD09AE00370877 /* RatesView.swift in Sources */,
+				0416308929AF70950031EC9B /* AwardsView.swift in Sources */,
 				046C8EE0299FA38E0061D046 /* Colors.swift in Sources */,
 				9589755529A7C3DD00463B1A /* TabBarController.swift in Sources */,
+				0416308529AF70390031EC9B /* ProgressView.swift in Sources */,
+				0416308F29AF70EC0031EC9B /* AccountViewController.swift in Sources */,
 				046C8EBC299F74880061D046 /* SingInViewController.swift in Sources */,
 				0416307329AF30D90031EC9B /* UIStackView + Ext.swift in Sources */,
 				04C0643029A5E4B30024125C /* QuizAnswerViewController.swift in Sources */,
 				046C8EED29A39A210061D046 /* QuizWelcomeView.swift in Sources */,
-				9589755729AB972C00463B1A /* UIColor + ext.swift in Sources */,
 				0452B96D29AD232500370877 /* String + Ext.swift in Sources */,
 				04DD01F929A4E87B00C2721F /* UIlabel + Ext.swift in Sources */,
 				046C8EE2299FE6BB0061D046 /* UserModel.swift in Sources */,
+				0416308D29AF70E10031EC9B /* AccountView.swift in Sources */,
 				0485128E29AB953200A9CCFF /* QuizAnswersTableViewCell.swift in Sources */,
+				0416308729AF70490031EC9B /* ProgressViewController.swift in Sources */,
 				046C8EE529A384010061D046 /* UserSettings.swift in Sources */,
 				0485128C29AB7F4A00A9CCFF /* UIButton + Ext.swift in Sources */,
 				0452B96B29AD177700370877 /* UIView+Ext.swift in Sources */,
 				046C8EDD299FA25F0061D046 /* GreetingViewController.swift in Sources */,
 				04C0643329A610960024125C /* QuizModel.swift in Sources */,
+				0416308B29AF70A30031EC9B /* AwardsViewController.swift in Sources */,
+				0416308329AF6FA40031EC9B /* HomeViewController.swift in Sources */,
 				046C8EB8299F74880061D046 /* AppDelegate.swift in Sources */,
 				046C8EF229A3D35F0061D046 /* MeetTableViewCell.swift in Sources */,
 				046C8ED9299FA2160061D046 /* GreetingView.swift in Sources */,
