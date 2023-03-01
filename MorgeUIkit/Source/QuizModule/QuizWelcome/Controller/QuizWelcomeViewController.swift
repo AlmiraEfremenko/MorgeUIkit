@@ -9,10 +9,14 @@ import UIKit
 
 class QuizWelcomeViewController: UIViewController {
 
+    // MARK: Property
+
     private var quizWelcomeView: QuizWelcomeView? {
         guard isViewLoaded else { return nil }
         return view as? QuizWelcomeView
     }
+
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +24,13 @@ class QuizWelcomeViewController: UIViewController {
         tapButtonStart()
     }
 
+    // MARK: Tap Button
+
     private func tapButtonStart() {
         quizWelcomeView?.buttonStart.addTarget(self, action: #selector(openQuizAnswerView), for: .touchUpInside)
     }
+
+    // MARK: OpenQuizAnswerView
 
     @objc private func openQuizAnswerView() {
         let quizAnswerView = QuizAnswerViewController()
